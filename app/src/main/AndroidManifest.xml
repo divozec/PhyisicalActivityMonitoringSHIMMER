@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rad.diplomski.myapplication">
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_diplomski"
+        android:label="Physical Activity Monitoring"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="rad.diplomski.myapplication.Main.MainActivity"
+            android:label="Physical Activity Monitoring" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="rad.diplomski.myapplication.Main.DeviceListActivity" android:label="Select Device" android:theme="@android:style/Theme.Holo.Light.Dialog"></activity>
+        <service android:enabled="true" android:name="rad.diplomski.myapplication.service.MultiShimmerTemplateService" />
+        <service android:name="rad.diplomski.myapplication.tools.ActivityRecognizedService" />
+
+    </application>
+
+
+</manifest>

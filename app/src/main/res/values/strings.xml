@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My Application</string>
+    <string name="main">Main</string>
+   	<string name="title_paired_devices">Paired Devices</string>
+    <string name="enable_sensors_done">Done</string>
+    <string name="configure_device">Configure Shimmer</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">SCAN FOR DEVICES</string>
+    <item type="id" name="PARENT_ID"/>
+    <item type="id" name="CHILD_ID"/>
+    
+    <string-array name="options_menu">
+        <item>Devices</item>
+        <item>Plot</item>
+        <item>Exercise Setup</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_shimmer</item>
+        <item>@drawable/ic_plot</item>
+        <item>@drawable/ic_monitoruser</item>
+
+
+
+    </array>
+    
+    <!-- Spinner with the sensors for calculating the hear rate -->
+    <string name="sensor_prompt">Choose a sensor</string>
+    <string-array name="sensors_to_heart_rate">
+        <item>A1</item>
+        <item>A12</item>
+        <item>A13</item>
+        <item>A14</item>
+    </string-array>
+
+        <string-array name="sensors_to_heart_rate_ecg">
+        <item>A1</item>
+        <item>A12</item>
+        <item>A13</item>
+        <item>A14</item>
+    </string-array>
+    
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="enter_your_age">Enter your age</string>
+    <string name="age">Age</string>
+    <string name="set_age">Set Age</string>
+    <string name="set_exercise_parameters">Set exercise parameters</string>
+    <string name="select_exercise_intensity">Select exercise intensity</string>
+    <string name="set_exercise_intensity">Set exercise intensity</string>
+    <string name="moderate">Moderate</string>
+    <string name="vigorous">Vigorous</string>
+
+    <!-- Poruke koje se ispisuju korisniku na ekranu -->
+    <string name="poruka_1">Sve je uredu. Možete nastaviti sa aktivnošću.</string>
+    <string name="poruka_2">STANI!!! Puls je jako povišen.</string>
+    <string name="poruka_3">Obavezno se još odmorite!!!Osjećate li se dobro!?Treba li pozvati pomoć!?</string>
+    <string name="poruka_4">Uspori! Smanjite tempo svoje aktivnosti.</string>
+    <string name="poruka_5">Izmjeren povišen puls. Možete napraviti kratku pauzu.</string>
+    <string name="poruka_6">Izmjereno je prekomjerno znojenenje. Kako bi vratili izgubljenu tekućinu napijte se vode.</string>
+    <string name="poruka_7">Nastavite sa odmorom. Popijte vode.</string>
+    <string name="poruka_8">STANI!!! Napravite pauzu. Izmjereno je prekomjerno znojenenje. Kako bi vratili izgubljenu tekućinu napijte se vode. Aplikacija
+	će vam javiti kada možete nastaviti.</string>
+    <string name="poruka_9">STANI!!! Obavezno se odmorite. Aplikacija će ti javiti kad možete nastaviti.</string>
+    <string name="poruka_10">Trebali bi ste napraviti kratku pauzu.</string>
+    <string name="poruka_11">Nastavite sa odmaranjem dok se vaš puls ne normalizira. Aplikacija će vam javiti kad da nastavite.</string>
+    <string name="poruka_12">Nastavite sa odmorom, aplikacija će vam javiti kad smijete  nastaviti.</string>
+    <string name="poruka_13">Trebali bi ste napravit pauzu.</string>
+    <string name="poruka_14"> Detektiran je umor u vašem tijelu. Trebali bi ste se odmoriti.</string>
+    <string name="poruka_15">Uspori! Smanjite tempo svoje aktivnosti. Popijte vode.</string>
+    <string name="poruka_16">Nastavite sa odmorom, aplikacija će vam javiti kad smijete  nastaviti. Popijte vode.</string>
+    <string name="poruka_17">Detektiran je umor u vašem tijelu. Trebali bi ste se odmoriti. Popijte vode.</string>
+    <string name="poruka_18">STANI!!!Detektiran je umor u vašem tijelu. Trebali bi ste se odmoriti. Popijte vode.</string>
+
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+
+        android:id="@+id/tvSelectIntensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/select_exercise_intensity"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rgIntensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbtnModerate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/moderate" />
+
+        <RadioButton
+            android:id="@+id/rbtnVigorous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vigorous" />
+    </RadioGroup>
+
+</LinearLayout>

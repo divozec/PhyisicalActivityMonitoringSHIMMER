@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:padding="5dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please insert your body parameters"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/gray"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
+
+    <TextView
+        android:text="Age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAge" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etAge"
+        android:hint="Click to enter your age"/>
+    <TextView
+        android:text="Weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWeight" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etWeight"
+        android:hint="Click to enter your weight in kg"/>
+    <TextView
+        android:text="Height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvHeight" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etHeight"
+        android:hint="Click to enter your height in cm"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select gender"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgSex">
+            <RadioButton
+                android:text="Male"
+                android:checked="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rbMale"/>
+            <RadioButton
+                android:text="Female"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rbFemale"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your physical form"
+            android:paddingTop="5dp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgBodyType">
+            <RadioButton
+                android:text="Normal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:id="@+id/rbNormal"/>
+            <RadioButton
+                android:text="Athletic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rbAthletic"/>
+        </RadioGroup>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm parameters"
+        android:layout_gravity="center"
+        android:id="@+id/btnConfirmParams"
+        android:padding="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="50"
+            android:weightSum="100">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="BMI"
+                android:textColor="@color/green"
+                android:layout_weight="50"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:id="@+id/tvBMI"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="50"
+            android:weightSum="100">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Recommended water intake"
+            android:textColor="@color/shimmer_blue"
+            android:layout_weight="50"/>
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/tvWaterConsumption"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start!"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/btnStartExercising"
+        android:padding="5dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shimmer setup"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/btnShimmerSetup"
+        android:padding="5dp"/>
+    </LinearLayout>
+</LinearLayout>
